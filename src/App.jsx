@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './Components/NavBar'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Createblog from './Components/Createblog'
+import CreateBlog from './Components/Createblog'
 import ManageBlogs from './Components/ManageBlogs'
 import Home from './Components/Home'
 import EditBlog from './Components/EditBlog'
@@ -17,7 +17,7 @@ function App() {
      </div>
      <div className="container-fluid">
 <Routes>
-<Route path="/create" element={<Createblog/>}/>
+<Route path="/create" element={<CreateBlog/>}/>
 <Route path="/manage" element={<ManageBlogs/>}/>
 <Route path="/edit/:id" element={<EditBlog/>}/>
 <Route path="/*" element={<Home/>}/>
